@@ -70,6 +70,7 @@ app.get("/contact", function (request, response) {
    
 });
 
-app.listen(3000, function(){
-    console.log("Listening at Port 3000")
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
+    console.log("Listening at Port " + port);
 });
