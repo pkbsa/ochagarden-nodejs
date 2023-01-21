@@ -83,7 +83,9 @@ a{
     color: #e8e6e6;
     margin-bottom: 0.3em;
 }
-
+.page-1 .container #head{
+    font-size: 1.4rem;
+}
 .page-1 img{
     width: 100%;
     height: 15em;
