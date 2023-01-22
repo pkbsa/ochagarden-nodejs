@@ -90,6 +90,13 @@ app.get("/products-leaf", function (request, response) {
         response.render('ageverify')
     }
 });
+app.get("/certificate", function (request, response) {
+    if(request.session.verifyAge === true){
+        response.render("certificate");
+    }else{
+        response.render('ageverify')
+    }
+});
 app.get('*', function(req, res){
     res.redirect('/')
   });
