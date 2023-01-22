@@ -69,6 +69,13 @@ app.get("/contact", function (request, response) {
     }
    
 });
+app.get("/products/seed", function (request, response) {
+    if(request.session.verifyAge === true){
+        response.render("products_1");
+    }else{
+        response.render('ageverify')
+    }
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
