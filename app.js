@@ -90,6 +90,9 @@ app.get("/products-leaf", function (request, response) {
         response.render('ageverify')
     }
 });
+app.get('*', function(req, res){
+    res.redirect('/')
+  });
 
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
