@@ -1,3 +1,10 @@
+h1{
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+}
+h3{
+    margin: 0;
+}
 .page{
     min-height: 100vh;
     background-color: #5F6942;
@@ -13,7 +20,12 @@
     align-items: center;
     padding: 2em;
     border-radius: 30px;
-    gap: 2em;
+    gap: 1.5em;
+}
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 body {
     margin: 0px;
@@ -45,12 +57,21 @@ form{
     background-color: #f6f6f6;
     text-align: center;
 }
+.page .container ้h3{
+    font-size: 0.2rem!important;
+}
 @media (max-width:400px){
     h1{
         font-size: 7vmin;
     }
     h2{
         font-size: 5vmin;
+    }
+    h4{
+        font-size: 4.5vmin;
+    }
+    h5{
+        font-size: 4vmin;
     }
     .form-control-new{
         width: 80vw;

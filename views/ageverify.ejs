@@ -17,8 +17,13 @@
     <body>
         <div class="page">
             <div class="container">
-                <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์</h1>
-                <h2>กรุณากรอกปีเกิดของคุณ (พ.ศ.)</h2>
+                <div class="column-flex">
+                <h1>ยินดีต้อนรับเข้าสู่สวนเกษตรโอชา</h1>
+                
+                <h4>เว็บไซต์ขายผลิตภัณฑ์พืชควบคุม</h4>
+                <h4>ผู้เข้าควรมีอายุมากกว่า 20 ปี</h4>
+                </div>
+                <h5>กรุณากรอกปีเกิดของคุณ (พ.ศ.)</h5>
                 <form action="/verifyAge" method="POST">
                     <input type="number" name="birthYear" class="form-control-new" min="2450" max="2600" pattern="[2450-2600]" id="numberInput" placeholder="YYYY" title="โปรดใส่ ปี พ.ศ. ให้ถูกต้อง" required>
                     <button class="btn btn-primary" type="submit">เข้าสู่เว็บไซต์</button>

@@ -69,9 +69,23 @@ app.get("/contact", function (request, response) {
     }
    
 });
-app.get("/products/seed", function (request, response) {
+app.get("/products-seed", function (request, response) {
     if(request.session.verifyAge === true){
         response.render("products_1");
+    }else{
+        response.render('ageverify')
+    }
+});
+app.get("/products-flower", function (request, response) {
+    if(request.session.verifyAge === true){
+        response.render("products_2");
+    }else{
+        response.render('ageverify')
+    }
+});
+app.get("/products-leaf", function (request, response) {
+    if(request.session.verifyAge === true){
+        response.render("products_3");
     }else{
         response.render('ageverify')
     }
