@@ -105,7 +105,7 @@ img{
 .modal-body p{
     color: #474a40;
 }
-@media (max-width: 540px) {
+@media (max-width: 680px) {
     .toggle-button {
         display: flex;
     }

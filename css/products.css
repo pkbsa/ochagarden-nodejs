@@ -46,7 +46,7 @@ a{
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -124,9 +124,6 @@ a{
         flex-direction: column!important;
         align-items: center;
     }
-    .page {
-        height: auto;
-    }
     .row{
         width: 80%!important;
     }
@@ -134,7 +131,7 @@ a{
         height: 80%!important;
     }
 }
-@media (max-width: 540px) {
+@media (max-width: 680px) {
     .toggle-button {
         display: flex;
     }

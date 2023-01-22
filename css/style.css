@@ -117,9 +117,10 @@ a{
     margin-top: 1em;
 }
 .page-3  {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #F5F5EF;
 }
 .page-3 .container {
@@ -224,7 +225,7 @@ a{
     border: solid 2px white;
     border-radius: 30px;
  }
-@media (max-width: 540px) {
+@media (max-width: 680px) {
     .toggle-button {
         display: flex;
     }
@@ -258,16 +259,13 @@ a{
     }
 }
 @media (max-width: 768px) {
-    .page-3{
-        height: auto;
-    }
     .page-3 .container {
         flex-direction: column;
         margin-top: 3em;
         margin-bottom: 3em;
     }
     .page-3 .width{
-        width: auto;
+        min-width: 50vw;
         max-height: 500px;
         margin-bottom: 2em;
     }
