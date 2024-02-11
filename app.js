@@ -37,6 +37,7 @@ app.use(fileUpload());
 const publicDirectory = path.join(__dirname + "/css");
 app.use(express.static(publicDirectory));
 
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 
