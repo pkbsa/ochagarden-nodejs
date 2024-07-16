@@ -42,61 +42,39 @@ app.set("view engine", "ejs");
 
 
 app.get("/", function (request, response) {
-    if(request.session.verifyAge === true){
+  
         response.render("index")
-    }else{
-        response.render('ageverify')
-    }
+    
 });
 app.post('/verifyAge', function (request, response){
-    if(request.body.birthYear < 2546){
         request.session.verifyAge = true;
-    }
-    response.redirect('/');
+    
 })
 app.get("/products", function (request, response) {
    
-    if(request.session.verifyAge === true){
         response.render("products");
-    }else{
-        response.render('ageverify')
-    }
 });
 app.get("/contact", function (request, response) {
-    if(request.session.verifyAge === true){
+   
         response.render("contact");
-    }else{
-        response.render('ageverify')
-    }
+   
    
 });
 app.get("/products-seed", function (request, response) {
-    if(request.session.verifyAge === true){
         response.render("products_1");
-    }else{
-        response.render('ageverify')
-    }
+   
 });
 app.get("/products-flower", function (request, response) {
-    if(request.session.verifyAge === true){
         response.render("products_2");
-    }else{
-        response.render('ageverify')
-    }
+    
 });
 app.get("/products-leaf", function (request, response) {
-    if(request.session.verifyAge === true){
         response.render("products_3");
-    }else{
-        response.render('ageverify')
-    }
+   
 });
 app.get("/certificate", function (request, response) {
-    if(request.session.verifyAge === true){
         response.render("certificate");
-    }else{
-        response.render('ageverify')
-    }
+    
 });
 app.get('*', function(req, res){
     res.redirect('/')
